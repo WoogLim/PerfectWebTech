@@ -75,7 +75,7 @@ function displayPhotos(){
 // 스크롤 이벤트로 사진을 불러오기
 window.addEventListener('scroll', () =>{
 
-    // 윈도우 창의 높이값과 스크롤 값을 더한 값보다 바디의 기본으로 지정된 높이의 -1000보다 크고 이미지 로드가 완료된 상태일때 실행
+    // 우리가 보고있는 화면 높이 + 스크롤Y 좌표 >= 화면 전체 높이 && 사진 로드가 완료된 경우
     if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready)
     {
         // console.log('window.innerHeight:', window.innerHeight);
